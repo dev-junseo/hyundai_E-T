@@ -1,0 +1,64 @@
+.logo {
+    float: left;        /*왼쪽으로 플로팅*/
+    width: 25%;       /*너비*/
+    height: 100px;      /*높이*/
+}
+.logo > a > img {
+    width: 80px;
+    height: 70px;
+    display: block;
+    margin:  auto;
+}
+
+
+/*내비게이션 영역*/
+nav {
+    float: right;      /*로고 옆 오른쪽으로 플로팅*/
+    width: 75%;      /*너비*/
+    height: 100px;     /*내비게이션 영역 높이*/
+    padding-top: 40px; /*메뉴를 아래로 내리기 위해*/
+}
+#topMenu {
+    height: 60px;
+}
+#topMenu > li {
+    float: right;        /*메뉴 항목을 왼쪽으로 플로팅*/
+    position: relative; /*서브메뉴를 absolute 하기위함*/
+}
+#topMenu > li > a {
+    display: block;            /*링크 텍스트 블록 형태로 지정*/
+    color: #fff;             /*폰트 색상*/
+    font-weight: 600;          /*폰트 굵기*/
+    text-shadow: 0 1px #222; /*그림자 추가*/
+    padding: 20px 100px;        /*패딩 지정*/
+}
+#topMenu > li > a > span {
+    font-size: 0.5em;
+}
+#topMenu > li > a:hover {
+    text-shadow: 0 -1px #222; /*글자가 굵어지지 않도록 지정*/
+}
+#topMenu > li > ul {
+    display: none;           /*서브메뉴 처음에는 감춤*/
+    position: absolute;      /*서브메뉴가 topMenu와 어울리기 위함*/
+    width: 100%;
+    left: 20px;
+    margin: 0;
+    background-color: rgba(0, 0, 68, 0.6);
+}
+#topMenu > li > ul > li {
+    padding: 10px 10px 10px 30px;   /*서브메뉴 항목 크기 지정*/
+}
+
+#topMenu > li > ul > li > a {
+    font-size: 14px;
+    padding: 10px;
+    color: #fff;
+}
+#topMenu > li:hover > ul {
+    display: block;    /*메인 메뉴 항목 위로 오버하면 서브메뉴 표시*/
+    z-index: 10;       /*슬라이드 쇼에 가리지 않게 조절*/
+}
+#topMenu > li > ul > li:hover {
+    background-color: #004;
+}
