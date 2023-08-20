@@ -5,6 +5,8 @@
 @import "components/header.css";
 @import "components/background.css";
 @import "components/slideshow.css";
+@import "components/button.css";
+@import "components/effect.css";
 
 
 body {
@@ -16,20 +18,19 @@ main {
     background-image: url(../image/photo-1.jpg);
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 .side-bar {
     position: absolute;
     background-color: rgba(89,120,148,0.5);
-    width: 40%;
+    width: 35%;
     height: 100vh;
-    bottom: -15px;
     display: flex;
     justify-content: right;
     align-items: center;
 }
 .side-bar__comment {
     margin-right: 120px;
-    width: 240px;
 }
 
 .slide-right {
@@ -38,7 +39,7 @@ main {
 
 h1 {
     color: var(--bg-color);
-    font-size: 30px;
+    font-size: 40px;
 }
 h2 {
     float: right;
@@ -52,39 +53,176 @@ h2 {
     background-color: var(--bg-color);
     width: 100%;
     height: 60vh;
+    position: relative;
 }
-.second__side-bar {
+.introduce__left {
     position: absolute;
     background-color: black;
-    width: 40%;
+    width: 35%;
     height: 60vh;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
+}
+.introduce__left__comment {
+    margin-bottom: 60px;
+}
+.introduce__left__comment > h1 {
+    border-bottom: 1px solid var(--bg-color);
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+.introduce__right {
+    position: absolute;
+    right: 0;
+    width: 65%;
+    height: 60vh;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.introduce__right__comment {
+    width: 450px;
+    margin: 0 0 100px 15%;
+}
+.comment__main {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.comment__sub {
+    font-size: 18px;
 }
 
 /*image slide*/
 .image-bar {
     background-image: url(../image/photo-2.jpg);
     width: 100%;
-    height: 40vh;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
 }
-.second-image {
-    background-image: url(../image/photo-3.jpg);
+.thirth-slide-title {
+    background-color: var(--bg-color);
+    width: 50%;
+    height: 23vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thirth-slide-title > span {
+    font-size: 50px;
+    color: #00305b;
 }
 
 /*thirth slide*/
 .achievements {
-    background-color: tomato;
+    background-color: var(--bg-color);
     width: 100%;
-    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.achievements__boxes {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+.achievements__box {
+    width: 60vh;
+    height: 60vh;
+    margin: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+}
+.achievements__box > span {
+    font-size: 20px;
+    font-weight: 500;
+    display: none;
+}
+.fir-box {
+    background-image: url(../image/리비아\ 대수로공사\ 참여.png);
+}
+.sec-box {
+    background-image: url(../image/부산역\ 1\,2단계\ 공사.png);
+}
+.thi-box {
+    background-image: url(../image/인천공항3단계공사\ 설계참여.png);
+}
+.four-box {
+    background-image: url(../image/KTX\ 신포항역\ 검수시설\ 검수고.png);
+}
+.achievements__box:hover {
+    background-color: var(--bg-color);
+    opacity: 0.4;
+    transition: 0.4s ease-in-out;
+}
+.achievements__box:hover > span {
+    display: block;
+}
+
 
 /*fourth slide*/
 .department {
-    background-color: teal;
+    background-color: var(--bg-color);
     width: 100%;
-    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fourth-slide-title {
+    margin-bottom: 30px;
+}
+.fourth-slide-title > span {
+    font-size: 50px;
+    color: #00305b;
+}
+.department__boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.department__box {
+    width: 400px;
+    height: 600px;
+    background-color: tomato;
+    margin: 10vh;
+}
+.department__box__image {
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.design {
+    background-image: url(../image/설계부.jpg);
+}
+.supervisement {
+    background-image: url(../image/감리부.webp);
+}
+.cunsulting {
+    background-image: url(../image/시공\ 컨설팅.jpg);
+}
+.department__box__comment {
+    width: 400px;
+    height: 200px;
+    background-color: teal;
+}
+
+
+/*image slide*/
+.second-image {
+    background-image: url(../image/photo-3.jpg);
 }
 
 /*last slide*/
