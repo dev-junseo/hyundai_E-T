@@ -21,7 +21,7 @@
 
 /*achievement box effect*/
 .wrapper{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     max-width: 80rem;
 }
@@ -33,7 +33,7 @@
 }
   
 .col{
-    width: calc(25% - 2rem);
+    width: 40vh;
     margin: 1rem;
     cursor: pointer;
 }
@@ -47,21 +47,21 @@
 .back{
     background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
-    border-radius: 10px;
+    border-radius: 5px;
     background-position: center;
     transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     backface-visibility: hidden;
     text-align: center;
-    min-height: 280px;
+    min-height: 40vh;
     height: auto;
-    border-radius: 10px;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 25px;
 }
   
 .back{
-    background: #cedce7;
-    background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+    background-repeat: no-repeat; /* 배경이미지X */
+    background-size: cover; /* 요소를 비율에 맞게 커버 */
+    background-position: center; /* 이미지를 요소의 정가운데로 처리 */
 }
 
   
@@ -144,23 +144,4 @@
     color: rgba(255,255,255,0.7);
     font-family: 'Montserrat';
     font-weight: 300;
-}
-  
-@media screen and (max-width: 64rem){
-    .col{
-      width: calc(33.333333% - 2rem);
-    }
-}
-  
-@media screen and (max-width: 48rem){
-    .col{
-      width: calc(50% - 2rem);
-    }
-}
-  
-@media screen and (max-width: 32rem){
-    .col{
-      width: 100%;
-      margin: 0 0 2rem 0;
-    }
 }

@@ -52,7 +52,7 @@ h2 {
     margin-top: 15px;
 }
 .main__name {
-    font-size: 70px;
+    font-size: 60px;
 }
 
 /*second slide*/
@@ -134,49 +134,15 @@ h2 {
     align-items: center;
 }
 .achievements__boxes {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 100px 0;
 }
-.achievements__box {
-    width: 60vh;
-    height: 60vh;
-    margin: 25px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s ease-in-out;
+.achievements__boxline {
+    margin: 0 5%;
 }
-.achievements__box > span {
-    font-size: 20px;
-    font-weight: 500;
-    display: none;
-}
-.fir-box {
-    background-image: url(../image/리비아\ 대수로공사\ 참여.png);
-}
-.sec-box {
-    background-image: url(../image/부산역\ 1\,2단계\ 공사.png);
-}
-.thi-box {
-    background-image: url(../image/인천공항3단계공사\ 설계참여.png);
-}
-.four-box {
-    background-image: url(../image/KTX\ 신포항역\ 검수시설\ 검수고.png);
-}
-.achievements__box:hover {
-    background-color: var(--bg-color);
-    opacity: 0.4;
-    transition: 0.4s ease-in-out;
-}
-.achievements__box:hover > span {
-    display: block;
-}
-
 
 /*fourth slide*/
 .department {
@@ -195,7 +161,7 @@ h2 {
     color: #00305b;
 }
 .department__boxes {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
 }
