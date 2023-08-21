@@ -7,6 +7,7 @@
 @import "components/slideshow.css";
 @import "components/button.css";
 @import "components/effect.css";
+@import "components/footer.css";
 
 
 body {
@@ -195,14 +196,14 @@ h2 {
 .department__box {
     width: 400px;
     height: 600px;
-    background-color: tomato;
+    background-color: #e4e4e4;
     margin: 10vh;
 }
 .department__box__image {
     width: 400px;
     height: 400px;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 .design {
     background-image: url(../image/설계부.jpg);
@@ -216,9 +217,19 @@ h2 {
 .department__box__comment {
     width: 400px;
     height: 200px;
-    background-color: teal;
 }
-
+.comment__box {
+    margin: 25px;
+}
+.department__box__comment span {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.department__box__comment span:first-child {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
 
 /*image slide*/
 .second-image {

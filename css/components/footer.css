@@ -1,0 +1,40 @@
+/*푸터 영역*/
+footer {
+    width: 100%;       /*너비*/
+    height: 100px;     /*높이*/
+    border-top: 2px solid #222;   /*위쪽에 가로선 추가*/
+}
+.address {
+    float: left;
+    width: 24%;
+    height: 90px;
+    border-right: 1px solid #ddd;
+    margin-left: 10px;
+}
+
+.tel {
+    float: left;
+    width: 24%;
+    height: 90px;
+    border-right: 1px solid #ddd;
+    margin-left: 10px;
+}
+
+.fax {
+    float: left;
+    width: 24%;
+    height: 90px;
+    border-right: 1px solid #ddd;
+    margin-left: 10px;
+}
+
+.business {
+    float: left;
+    width: 24%;
+    height: 90px;
+    margin-left: 10px;
+}
+.what {
+    font-weight: 600;
+    color: #0066cc;
+}
