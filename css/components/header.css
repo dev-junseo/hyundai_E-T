@@ -32,24 +32,3 @@ header {
     bottom: 0;
     padding-top: 40px;
 }
-.menu__child {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 90.5px;
-    z-index: 99999;
-}
-.menu__child > li {
-    display: inline-block;
-    width: 130px;
-    padding: 10px 0;
-    background-color: var(--bg-color);
-    text-align: center;
-}
-
-.menu__parent:hover .menu__child {
-    display: block;
-}
-.menu__child > li:hover {
-    background-color:darkgray;
-}

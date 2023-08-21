@@ -1,40 +1,21 @@
 /*푸터 영역*/
 footer {
     width: 100%;       /*너비*/
-    height: 100px;     /*높이*/
-    border-top: 2px solid #222;   /*위쪽에 가로선 추가*/
+    padding: 30px 0;
+    background-color: #222;
+    text-align: center;
 }
-.address {
-    float: left;
-    width: 24%;
-    height: 90px;
-    border-right: 1px solid #ddd;
-    margin-left: 10px;
+.foot-link {
+    width: 100%;
+    margin-bottom: 10px;
 }
-
-.tel {
-    float: left;
-    width: 24%;
-    height: 90px;
-    border-right: 1px solid #ddd;
-    margin-left: 10px;
+.foot-link a span {
+    color: var(--bg-color);
 }
-
-.fax {
-    float: left;
-    width: 24%;
-    height: 90px;
-    border-right: 1px solid #ddd;
-    margin-left: 10px;
-}
-
-.business {
-    float: left;
-    width: 24%;
-    height: 90px;
-    margin-left: 10px;
-}
-.what {
-    font-weight: 600;
-    color: #0066cc;
+.foot-info span {
+    display: inline-block;
+    padding: 0 10px;
+    color: var(--bg-color);
+    font-size: 13px;
+    line-height: 20px;
 }
