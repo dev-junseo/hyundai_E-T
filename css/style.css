@@ -11,6 +11,9 @@
 @import "components/footer.css";
 @import "components/media-query.css";
 
+/*screens*/
+@import "screens/overview.css";
+
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -115,7 +118,7 @@ h2 {
 .thirth-slide-title {
     background-color: var(--bg-color);
     width: 50%;
-    height: 23vh;
+    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,13 +146,16 @@ h2 {
 .achievements__boxline {
     margin: 0 5%;
 }
+/*second image bar*/
+.second__img-bar {
+    background-image: url(../image/photo-4.jpg);
+}
 
 /*fourth slide*/
 .department {
     background-color: var(--bg-color);
     width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -202,8 +208,3 @@ h2 {
     font-size: 23px;
     margin-bottom: 20px;
 }
-
-.second-bg {
-    background-image: url(../image/photo-4.jpg);
-}
-

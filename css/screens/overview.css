@@ -1,0 +1,111 @@
+.path-wrap {
+    position:relative; 
+    height:50px; 
+    background:#fff; 
+    z-index:50;
+}
+.path-wrap:before {
+    content:" "; 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:1px; 
+    background:#ddd; 
+    z-index:1;
+}
+.path-wrap:after {
+    content:" "; 
+    position:absolute; 
+    bottom:0; left:0; 
+    width:100%; 
+    height:1px; 
+    background:#ddd; 
+    z-index:1;
+}
+.path-wrap .inner {
+    max-width:1280px; 
+    margin:0 auto;
+}
+.path-wrap .inner:after {
+    content:""; 
+    display:block; 
+    clear:both;
+}
+.path-wrap .home {
+    float:left;
+}
+.path-wrap .home a {
+    display:block; 
+    width:50px; 
+    height:50px; 
+    background:url("../images/common/home.png") 50% 50% no-repeat; 
+    text-indent:-999em; 
+    overflow:hidden;
+}
+.path-wrap .part {
+    float:left; 
+    position:relative; 
+    min-width:248px; 
+    z-index:52;
+}
+.path-wrap .part:after {
+    content:" "; 
+    position:absolute; 
+    top:0; 
+    right:0; 
+    width:1px; 
+    height:100%; 
+    background:#ddd;
+}
+.path-wrap .part > a {
+    display:block; 
+    position:relative; 
+    height:50px; 
+    color:#454545; 
+    font-size:16px; 
+    line-height:50px;
+    padding:0 40px 0 20px;
+}
+.path-wrap .part > a:after {
+    content:""; 
+    position:absolute; 
+    top:50%; 
+    right:20px;
+    margin-top:-4px; 
+    width:10px; 
+    height:8px; 
+    background:url('../images/common/arrow_off.png') 0 0 no-repeat; 
+    background-size:100% 100%;
+}
+.path-wrap .part.active > a:after {
+    background-image:url('../images/common/arrow_on.png');
+}
+.path-wrap .part ul {
+    display:none; 
+    position:absolute; 
+    top:50px; 
+    left:-1px; 
+    right:0; 
+    background:#fff; 
+    border:1px solid #ddd; 
+    border-top:0; 
+    z-index:53;
+}
+.path-wrap .part ul li {
+    color:#2c2c2c; 
+    font-size:14px; 
+    line-height:1.35em; 
+    border-top:1px solid #eee;
+}
+.path-wrap .part ul li:first-child {
+    border-top:0;
+}
+.path-wrap .part ul li a {
+    display:block; 
+    padding:12px 19px;
+}
+.path-wrap .part ul li a:hover {
+    color:#2c2c2c; 
+    background:#f8f8f8;
+}
