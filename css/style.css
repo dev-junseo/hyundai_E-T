@@ -10,6 +10,7 @@
 @import "components/effect.css";
 @import "components/footer.css";
 @import "components/media-query.css";
+@import "components/sub-menu.css";
 
 /*screens*/
 @import "screens/overview.css";
@@ -18,6 +19,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     word-break: keep-all;
+    background-color: var(--bg-color);
 }
 
 /*first slide*/
@@ -154,7 +156,6 @@ h2 {
 /*fourth slide*/
 .department {
     background-color: var(--bg-color);
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
