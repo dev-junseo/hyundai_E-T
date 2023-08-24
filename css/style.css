@@ -127,7 +127,7 @@ h2 {
 }
 .thirth-slide-title > span {
     font-size: 50px;
-    color: #00305b;
+    color: var(--title-color);
 }
 
 /*thirth slide*/
@@ -165,7 +165,7 @@ h2 {
 }
 .fourth-slide-title > span {
     font-size: 50px;
-    color: #00305b;
+    color: var(--title-color);
 }
 .department__boxes {
     display:flex;
