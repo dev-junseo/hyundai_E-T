@@ -14,4 +14,11 @@
         margin-top: 10px;
         width: 90%;
     }
+    .address {
+        display: flex;
+        flex-direction: column;
+    }
+    .how-to-go {
+        margin-top: 50px;
+    }
 }
