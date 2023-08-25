@@ -13,7 +13,8 @@
 @import "components/sub-menu.css";
 
 /*screens*/
-@import "screens/overview.css";
+@import "screens/about.css";
+@import "screens/project.css";
 
 
 body {
