@@ -1,0 +1,11 @@
+.project-list {
+    width: 1200px;
+    background-color: teal;
+    text-align: center;
+}
+.project-list__detail {
+    background-color: tomato;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+}
