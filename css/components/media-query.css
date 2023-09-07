@@ -21,4 +21,10 @@
     .how-to-go {
         margin-top: 50px;
     }
+    
+}
+@media screen and (max-width: 1250px) {
+    .project-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
