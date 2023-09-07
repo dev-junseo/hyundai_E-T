@@ -2,6 +2,11 @@
 @import "reset.css";
 @import "variables.css";
 
+/*screens*/
+@import "screens/about.css";
+@import "screens/project.css";
+
+
 /*Components*/
 @import "components/header.css";
 @import "components/background.css";
@@ -11,10 +16,6 @@
 @import "components/footer.css";
 @import "components/media-query.css";
 @import "components/sub-menu.css";
-
-/*screens*/
-@import "screens/about.css";
-@import "screens/project.css";
 
 
 body {

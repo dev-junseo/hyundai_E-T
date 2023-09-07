@@ -1,11 +1,47 @@
+.title-area__project {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .project-list {
-    width: 1200px;
-    background-color: teal;
-    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 .project-list__detail {
     background-color: tomato;
-    width: 250px;
-    height: 250px;
-    display: inline-block;
+    width: 230px;
+    height: 230px;
+    margin: 30px auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project-list__detail:first-child {
+    background-image: url(../../image/리비아\ 대수로공사\ 참여.png);
+}
+.project-list__detail:nth-child(2) {
+    background-image: url(../../image/부산역\ 1\,2단계\ 공사.png);
+}
+.project-list__detail:nth-child(3) {
+    background-image: url(../../image/인천공항3단계공사\ 설계참여.png);
+}
+.project-list__detail:nth-child(4) {
+    background-image: url(../../image/KTX\ 신포항역\ 검수시설\ 검수고.png);
+}
+.project-list__detail:nth-child(5) {
+    background-image: url(../../image/울산대학교\ 생활관.png);
+}
+.project-list__detail:nth-child(6) {
+    background-image: url(../../image/KTX\ 신포항역\ 검수시설\ 차량사업소.png);
+}
+.project-list__detail:nth-child(7) {
+    background-image: url(../../image/울산\ KOSPO\ 영남타워.png);
+}
+.project-list__detail:nth-child(8) {
+    background-image: url(../../image/창원\ 푸른요양병원.png);
+}
+.project-list__detail:nth-child(9) {
+    background-image: url(../../image/부산국제금융센터\ \(주\)남부발전.png);
 }
