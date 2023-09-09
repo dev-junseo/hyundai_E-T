@@ -12,12 +12,45 @@
 }
 .project-list__detail {
     background-color: tomato;
-    width: 230px;
-    height: 230px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    width: 260px;
+    height: 260px;
     margin: 30px auto;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
+.project-list__detail__info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: var(--bg-color);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+}
+.project-list__detail:hover .project-list__detail__info {
+    opacity: 1;
+}
+.project-list__detail__info p:first-child {
+    font-size: 18px;
+    padding-bottom: 0.4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.project-list__detail__info p:last-child {
+    font-size: 11px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
 .project-list__detail:first-child {
     background-image: url(../../image/리비아\ 대수로공사\ 참여.png);
 }
@@ -28,20 +61,20 @@
     background-image: url(../../image/인천공항3단계공사\ 설계참여.png);
 }
 .project-list__detail:nth-child(4) {
-    background-image: url(../../image/KTX\ 신포항역\ 검수시설\ 검수고.png);
+    background-image: url(../../image/부산국제금융센터\ \(주\)남부발전.png);
 }
 .project-list__detail:nth-child(5) {
-    background-image: url(../../image/울산대학교\ 생활관.png);
+    background-image: url(../../image/울산\ KOSPO\ 영남타워.png);
 }
 .project-list__detail:nth-child(6) {
-    background-image: url(../../image/KTX\ 신포항역\ 검수시설\ 차량사업소.png);
+    background-image: url(../../image/KTX\ 신포항역\ 검수시설\ 검수고.png);
 }
 .project-list__detail:nth-child(7) {
-    background-image: url(../../image/울산\ KOSPO\ 영남타워.png);
+    background-image:url(../../image/울산대학교\ 생활관.png);
 }
 .project-list__detail:nth-child(8) {
     background-image: url(../../image/창원\ 푸른요양병원.png);
 }
 .project-list__detail:nth-child(9) {
-    background-image: url(../../image/부산국제금융센터\ \(주\)남부발전.png);
+    background-image:  url(../../image/KTX\ 신포항역\ 검수시설\ 차량사업소.png);
 }
